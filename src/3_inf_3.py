@@ -166,8 +166,8 @@ def plot_LR (B0, B1, price, date):
   plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
   plt.show()
 
-df_clean1 = pd.read_csv('data/fuel_clean.csv')
-df_clean2 = pd.read_csv('data/USA_clean.csv')
+df_clean1 = pd.read_csv('../data/fuel_clean.csv')
+df_clean2 = pd.read_csv('../data/USA_clean.csv')
 
 # Check the trend for the first half of the period
 

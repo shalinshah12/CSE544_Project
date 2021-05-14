@@ -15,7 +15,7 @@ import datetime
 from datetime import datetime as dt
 
 
-df = pd.read_csv('data/fuel_unclean.csv')
+df = pd.read_csv('../data/fuel_unclean.csv')
 df.head()
 
 # filling in the missing values for the price with the median from a 10 day window around the missing day

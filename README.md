@@ -13,4 +13,4 @@ The folder consists of all the datasets used in the project:
 The folder consists of all the .py files used for the project.
 
 ## Results folder: ##
-The folder consists of the result obtained in both the Mandatory and the Exploratory parts
+The folder consists of the result obtained in both the Mandatory and the Exploratory parts.

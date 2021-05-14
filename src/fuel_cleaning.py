@@ -14,12 +14,6 @@ import matplotlib.pyplot as plt
 import datetime
 from datetime import datetime as dt
 
-from google.colab import drive
-drive.mount('/content/drive')
-
-# Commented out IPython magic to ensure Python compatibility.
-# %cd '/content/drive/MyDrive/CSE544_PROJECT'
-# %ls -l
 
 df = pd.read_csv('data/fuel_unclean.csv')
 df.head()

@@ -51,7 +51,7 @@ print(len(date))
 
 # Follow the same procedure for deaths
 
-df = pd.read_csv('US_deaths.csv')
+df = pd.read_csv('data/US_deaths.csv')
 df.head()
 
 # Add data of all states to get total US deaths

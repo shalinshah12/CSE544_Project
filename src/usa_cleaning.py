@@ -15,7 +15,7 @@ import datetime
 from datetime import datetime as dt
 
 
-df = pd.read_csv('data/US_confirmed.csv')
+df = pd.read_csv('../data/US_confirmed.csv')
 df.head()
 
 # Add data of all states to get total US cases
@@ -51,7 +51,7 @@ print(len(date))
 
 # Follow the same procedure for deaths
 
-df = pd.read_csv('data/US_deaths.csv')
+df = pd.read_csv('../data/US_deaths.csv')
 df.head()
 
 # Add data of all states to get total US deaths
@@ -110,11 +110,11 @@ plt.show()
 dict = {'Date': date, 'Cases': [int(i) for i in cases], 'Death': [int(i) for i in death]}         
 df1 = pd.DataFrame(dict)
 
-df1.to_csv('data/USA_clean.csv')
+df1.to_csv('../data/USA_clean.csv')
 
 start = datetime.datetime(2020, 8, 10)
 end = datetime.datetime(2020, 12, 31)
-df_clean = pd.read_csv('data/USA_clean.csv')
+df_clean = pd.read_csv('../data/USA_clean.csv')
 
 def get_data(start, end, df_clean):
   cases = [int(df_clean['Cases'][i]) for i in range(0, len(df_clean['Date'])) if dt.strptime(df_clean['Date'][i], "%Y-%m-%d")>=start and dt.strptime(df_clean['Date'][i], "%Y-%m-%d")<=end]

@@ -93,9 +93,9 @@ plt.show()
 dict = {'Date': date_formatted, 'Price': price_list}         
 df1 = pd.DataFrame(dict)
 
-df1.to_csv('data/fuel_clean.csv')
+df1.to_csv('../data/fuel_clean.csv')
 
-df = pd.read_csv('data/fuel_clean.csv')
+df = pd.read_csv('../data/fuel_clean.csv')
 df.head()
 
 plt.plot(df['Date'], df['Price'])

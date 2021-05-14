@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 
-BI_data = pd.read_csv('data/Bayesian_Inference_data.csv')
+BI_data = pd.read_csv('../data/Bayesian_Inference_data.csv')
 
 def bayesianInference(data):
     """Computes the parameters alpha and beta that 

@@ -154,8 +154,8 @@ def LR1(cases, price, days):
   plt.show()
   return price, Z, total
 
-df_clean1 = pd.read_csv('data/fuel_clean.csv')
-df_clean2 = pd.read_csv('data/USA_clean.csv')
+df_clean1 = pd.read_csv('../data/fuel_clean.csv')
+df_clean2 = pd.read_csv('../data/USA_clean.csv')
 
 start = datetime.datetime(2020, 3, 4)
 end = datetime.datetime(2020, 3, 18)

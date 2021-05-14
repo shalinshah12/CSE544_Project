@@ -8,9 +8,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.stats as stats
 
-df = pd.read_csv('data/clean_organised.csv')
-feb_data = pd.read_csv('data/feb_data.csv')
-march_data = pd.read_csv('data/march_data.csv')
+df = pd.read_csv('../data/clean_organised.csv')
+feb_data = pd.read_csv('../data/feb_data.csv')
+march_data = pd.read_csv('../data/march_data.csv')
 
 def std(data):
     """Computes corrected standard deviation

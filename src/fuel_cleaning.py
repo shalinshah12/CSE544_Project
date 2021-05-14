@@ -98,8 +98,8 @@ df1.to_csv('../data/fuel_clean.csv')
 df = pd.read_csv('../data/fuel_clean.csv')
 df.head()
 
-plt.plot(df['Date'], df['Price'])
-plt.xticks(np.arange(df['Date'][0]), max(x)+1, 1.0))
+#plt.plot(df['Date'], df['Price'])
+#plt.xticks(np.arange(df['Date'][0]), max(x)+1, 1.0))
 
-print(type(df['Date'][0]))
+#print(type(df['Date'][0]))
 

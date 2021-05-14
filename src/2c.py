@@ -8,7 +8,7 @@ import datetime
 
 start = datetime.datetime(2020, 10, 1)
 end = datetime.datetime(2020, 12, 31)
-df_clean = pd.read_csv('data/clean_organised.csv')
+df_clean = pd.read_csv('../data/clean_organised.csv')
 
 def get_data(start, end, df_clean):
   MT_daily_cases = [int(df_clean['MT daily cases'][i]) for i in range(0, len(df_clean['Date'])) if dt.strptime(df_clean['Date'][i], "%m/%d/%Y")>=start and dt.strptime(df_clean['Date'][i], "%m/%d/%Y")<=end]

@@ -27,7 +27,7 @@ def get_data(start, end, df_clean):
 
 start = datetime.datetime(2020, 8, 1)
 end = datetime.datetime(2020, 8, 28)
-df_clean = pd.read_csv('data\clean_organised.csv')
+df_clean = pd.read_csv('../data/clean_organised.csv')
 
 date, MT_daily_cases, NC_daily_cases, MT_daily_death, NC_daily_death =  get_data(start, end, df_clean)
 MT_daily_cases=np.array(MT_daily_cases)
